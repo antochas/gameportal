@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 25, 2015 10:04:48 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="database.model.Gameranking" table="gameranking" catalog="gameportal" optimistic-lock="version">
+        <id name="gameid" type="int">
+            <column name="gameid" />
+            <generator class="foreign">
+                <param name="property">games</param>
+            </generator>
+        </id>
+        <one-to-one name="games" class="database.model.Games" constrained="true"></one-to-one>
+        <property name="upvotes" type="int">
+            <column name="upvotes" not-null="true" />
+        </property>
+        <property name="downvotes" type="int">
+            <column name="downvotes" not-null="true" />
+        </property>
+        <property name="votes" type="int">
+            <column name="votes" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
