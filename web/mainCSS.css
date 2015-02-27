@@ -1,0 +1,43 @@
+#customBody
+{
+    background: url("./Graphics/bg.png");
+    background-size: 200px 200px;
+    background-repeat: repeat;
+    height: 500px;
+}
+
+#customBG
+{
+    background-color: #0000FF;
+    background-size: 100px 100px;
+}
+
+#pageHeader
+{
+    text-align: center;
+}
+
+#signUser
+{
+    margin-left: 31cm;
+    margin-top: 0.3cm;
+}
+
+#buttonStyling
+{
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background-color: transparent;
+    color: #00FF00;
+}
+
+#inputStyling
+{
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    text-align: center;
+}
